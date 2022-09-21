@@ -1,0 +1,1 @@
+Welcome to my personal web site. This is where I will be posting my code as I develope my skills as a full-stack web developer. I am currently begining the Software Engineering Immersive coding bootcamp offered by General Assembly, as well as following the App Academy Open course.

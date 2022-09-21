@@ -1,88 +1,357 @@
-<!DOCTYPE html>
-<html lang="en"></html>
-<head>
-    <meta charset="UTF-8">
-    <title>Dave's Personal Webpage</title>
-  <style>
-    body {
-      text-align: center;
-      background: url("https://raw.githubusercontent.com/DaveKobrin/DaveKobrin.github.io/main/assets/images/personal/dave-bg-tile2.png");
-      
-      background-position: center;
-      color: white;
-      font-family: helvetica;
-    }
-    h1 {
-      font-size: 22px;
-    }
-    h2 {
-      font-size: 18px;
-    }
-    div {
-      max-width: 600px;
-      margin: 0 auto;
-    }
-    p {
-      margin: 0;
-      padding: 15px;
-      text-align: left;
-      background: rgba(0,0,0, .3)
-    }
-    .portrait {
-      margin: 60px 0 30px 0;
-      border-radius: 50%;
-      border: 12px solid #aaa;
-      max-width: 300px;
-    }
-    .projects {
-      display: block;
-      max-width: 600px;
-      margin: 30px auto 0px auto;
-    }
-    @media (max-width: 500px) {
-      .portrait {
-        max-width: 180;
-        border: 6px solid #aaa;
-        margin: 30px 0 20px 0;
-      }
-      .projects {
-        max-width:250px;
-      }
-      h1 {
-        font-size: 16px;
-      }
-      h2 {
-        font-size: 14px;
-      }
-      div {
-        max-width: 250px;
-      }
-      p {
-        font-size: 12px;
-      }
-    }
-  </style>
-</head>
-<body>
-    <img class="portrait" src="https://raw.githubusercontent.com/DaveKobrin/DaveKobrin.github.io/main/assets/images/personal/DavePortrait.png">
-  <h1>Hi! I'm Dave, a NJ-based Software Engineer.</h1>
-  
-  <h2>Check out some of my recent projects</h2>
-  <div>
-    <a href="https://github.com/DaveKobrin/Hazel_DK" target="_blank"><img class="projects" src="https://raw.githubusercontent.com/DaveKobrin/DaveKobrin.github.io/main/assets/images/personal/HazelEngine_screen.png"></a><p>A real time simulation engine project mostly written in c++.</p>
-  </div>
-  <div>
-    <a href="https://github.com/DaveKobrin/JadeGameEngine" target="_blank"><img class="projects" src="https://raw.githubusercontent.com/DaveKobrin/DaveKobrin.github.io/main/assets/images/personal/JadeEngine_screen.png"></a><p>A real time simulation engine written in Java.</p>
-  </div>
-  <div>
-    <a href="https://github.com/DaveKobrin/AutoFuelAndService" target="_blank"><img class="projects" src="https://raw.githubusercontent.com/DaveKobrin/DaveKobrin.github.io/main/assets/images/personal/FuelEcoService_screen.png"></a><p>A stand alone Java app for tracking fuel economy and maintenance records. Built with Java, JavaFX, and SQL.</p>
-  </div>
-  <h2>Or, see my LinkedIn <a href="https://www.linkedin.com/in/david-kobrin-developer-in-nj/" target="_blank">profile</a>.</h2>
+<!-- HELLO
+-
+DevFolio is a minimal, clean, lightweight and fully responsive template for Devlopers!
+Created by Anil Seervi.
+-
+GitHub repo: https://github.com/AnilSeervi/DevFolio
+README: https://github.com/AnilSeervi/DevFolio/blob/master/README.md
+-
+Have fun creating your portfolio on this template!!! -->
 
-<!---  <input type="email" placeholder="Your email">
-  <input type="submit">
-  <p>A sample webpage made with html and css. <a href="RBG_Tribute.html">A tribute to Justice Ruth Bader Ginsburg</a> </p> 
-</body>
---->  
-</body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title: add your Portfolio websites's title here -->
+    <title>Dave Kobrin | Developer</title>
+
+    <!-- Add some coding keywords below, Ex: (javascript, yourusername, etc) -->
+    <meta name="keywords" content="David Kobrin, Dave Kobrin, javascript, react, node, express, html, css, md, c++, java, game developer, software engineer" />
+
+    <!-- Improve your SEO by adding a small descrption of you -->
+    <meta name="description" content="David Kobrin | Developer | React | MongoDB | Express | Node | Java | Javasript | C++ " />
+
+    <!-- Add a your png Logo to the assets folder and change the href attr accordingly  -->
+    <link rel="icon" type="image/png" href="./assets/devfolio-logo.png" />
+
+    <!-- Add your primary-theme color for the value of content -->
+    <meta name="theme-color" content="#36d1dc" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <!-- Fill content with the URL of this portfolio you'll host -->
+    <meta property="og:url" content="https://davekobrin.github.io/" />
+    <!-- Fill content with the title of your portfolio(Recommended to use what you put in <title> tag) -->
+    <meta property="og:title" content="Dave Kobrin | Developer" />
+    <!-- Give a short description that'll show up when you/someone shares your portfolio on different platform -->
+    <meta property="og:description" content="Made using DevFolio Template" />
+    <!-- Add a thumbnail image in assets folder and fill the content attr with URL to that thumbnail 
+      so that a thumbnail image of your portfolio is shown while shared on other platform -->
+    <meta
+      property="og:image"
+      content="https://devfolio.js.org/assets/devfolio.png"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <!-- Again fill content attr with the URL of this portfolio you'll host -->
+    <meta property="twitter:url" content="https://davekobrin.github.io/" />
+    <!-- Recommended to use the same text used within <title> element -->
+    <meta property="twitter:title" content="Dave Kobrin | Developer" />
+    <!-- short description that shows up while your portfolio is shared -->
+    <meta
+      property="twitter:description"
+      content="Made using DevFolio Template"
+    />
+    <!-- Fill content with the URL to the thumbnail image that you'll put in the assets folder -->
+    <meta
+      property="twitter:image"
+      content="https://anilseervi.vercel.app/assets/devfolio.png"
+    />
+
+    <!-- link tags -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="./javascript/scrollreveal.min.js"></script>
+    <script
+      defer
+      type="text/javascript"
+      src="./javascript/scrollveal.js"
+    ></script>
+
+    <!-- Remove Google Analytics once you have your portfolio website set-up -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-122228201-4"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-122228201-4");
+    </script>
+    <!-- End of Google Analytics -->
+  </head>
+  <body>
+    <!-- Hero Section -->
+    <div id="hero">
+      <section class="container">
+        <h1 class="hero-title">
+          Hi, my name is <span class="text-color-main name">Dave Kobrin</span>
+          <br />
+          I'm the Unknown Developer.
+        </h1>
+        <p class="hero-cta">
+          <a class="cta-btn cta-btn--hero" href="#about">Get in touch</a>
+        </p>
+      </section>
+      <a href="#about" class="scroll-down-link" aria-label="scroll-down">
+        <div class="scroll-down"></div
+      ></a>
+    </div>
+    <!-- /END Hero Section -->
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="row about-wrapper">
+          <div class="about-wrapper__image">
+            <img
+              class="img-fluid"
+              src="./assets/DavePortrait.png"
+              alt="Profile Image"
+            />
+          </div>
+          <div class="about-wrapper__info">
+            <p class="about-wrapper__info-text">
+              Once and future developer… <br />
+              In the past I was a video game programmer at Majesco where I have credits on 5 published titles. During the Y2K scandal, I lost my job, and continued my career down a variety of paths leading up to automotive mechanic. I found that as a mechanic I used many of the same skills that I used as a developer, identifying a problem, forming a plan to address it, testing, etc. I also learned more about serving customers, understanding their needs and priorities, and how to explain issues clearly and succinctly.
+
+            </p>
+            <p class="about-wrapper__info-text">
+              I always wanted to get back into coding though, so I enrolled in General Assembly’s Software Engineering bootcamp to update my skills, and now I am excited to be coming back to the field.  
+            </p>
+            <span class="about-wrapper__cta">
+              <a href="#" class="cta-btn cta-btn--resume">View Resume</a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /END About Section -->
+
+    <!--Projects Section-->
+    <section id="projects">
+      <div class="container">
+        <div class="project-wrapper">
+          <h2 class="section-title dark-blue-text">Projects</h2>
+
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">iLib - Again</h3>
+              <p class="project-wrapper__text-info">
+                iLib - Again is a full stack web application built with MongoDB, Node.js, and Express.js. 
+                It's purpose is to allow each user to keep track of their own personal media library(books, movies, games).
+                Data entry is simplified by utilizing a 3rd party API to look up UPC codes and populate the data into dropdowns.
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a
+                  href="https://ilib-again.herokuapp.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >See Live</a
+                >
+                <a href="https://github.com/DaveKobrin/iLib_Again" target="_blank" class="cta-btn text-color-main"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/iLib-screenshot.png"
+                    class="img-fluid"
+                    alt="Project Image"
+                  />
+                </div>
+              </a>
+            </div>
+          </article>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">Extreme Breakout</h3>
+              <p class="project-wrapper__text-info">
+                Extreme Breakout  is a modified version of the classic break-out game. One player can control a paddle
+                to slide left and right to bounce a ball upward into an assortment of blocks which take a varying number
+                of hits to break. Each hit will add to the players score, and if the player misses the ball it will cost
+                them a life. As difficulty increases there will be an alien that will move across the top of the screen
+                hat will shoot downward and if the projectile hits the player's paddle it stop the player from moving
+                for a short time. Various power ups are available to aid the player as they attempt to break all the
+                blocks and destroy the alien invader. Technology used Javasript, HTML Canvas, Css.
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a
+                  href="https://davekobrin.github.io/Extreme_Breakout/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >See Live</a
+                >
+                <a href="https://github.com/DaveKobrin/Extreme_Breakout" target="_blank" class="cta-btn text-color-main"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/ExtremeBreakout.png"
+                    class="img-fluid"
+                    alt="Project Image"
+                  />
+                </div>
+              </a>
+            </div>
+          </article>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">Fuel Economy and Service Tracker</h3>
+              <p class="project-wrapper__text-info">
+                Fuel Econonomy and Service Tracker is a stand alone Java application built with JavaFX, JDBC, and SQL.
+                Users can add vehicles to their garage, and track where and when services were performed and how much they
+                paid. In addition users can track how much they pay for fuel and how many miles they are getting per gallon.
+              </p>
+              <div class="project-wrapper__text-btns">
+                <!-- <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >See Live</a
+                > -->
+                <a href="https://github.com/DaveKobrin/AutoFuelAndService" target="_blank" class="cta-btn text-color-main"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/FuelEcoService_screen.png"
+                    class="img-fluid"
+                    alt="Project Image"
+                  />
+                </div>
+              </a>
+            </div>
+          </article>
+          <!-- /END Project -->
+        </div>
+      </div>
+    </section>
+    <!-- End Projects Section -->
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-wrapper">
+          <p class="contact-wrapper__text">[Put your call to action here]</p>
+          <a href="#" class="cta-btn cta-btn--resume">Call to Action</a>
+        </div>
+      </div>
+    </section>
+    <!-- END Contact Section -->
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="container">
+        <a href="#hero" class="back-to-top" aria-label="go back to top">
+          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+        </a>
+        <div class="social-links">
+          <!-- <a
+            href="#!"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="twitter"
+          >
+            <i class="fa fa-twitter"></i>
+          </a>
+          <a
+            href="#!"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="instagram"
+          >
+            <i class="fa fa-instagram"></i>
+          </a> -->
+          <!-- <a
+            href="#!"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="codepen"
+          >
+            <i class="fa fa-codepen"></i>
+          </a> -->
+          <a
+            href="https://www.linkedin.com/in/david-kobrin-developer-in-nj/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="linkedin"
+          >
+            <i class="fa fa-linkedin"></i>
+          </a>
+          <a
+            href="https://github.com/DaveKobrin"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="github"
+          >
+            <i class="fa fa-github"></i>
+          </a>
+          <a
+          href="mailto://david_kobrin@yahoo.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="email"
+        >
+          <i class="fa fa-envelope"></i>
+        </a>
+        </div>
+        <hr />
+        <p class="footer__text">
+          &copy; <span id="year"></span> - Template by
+          <a
+            href="https://github.com/AnilSeervi"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Anil Seervi</a
+          >. <br />Made with &hearts;
+        </p>
+      </div>
+    </footer>
+    <!-- END Footer Section -->
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    <script src="./javascript/vanilla-tilt.min.js"></script>
+    <script type="text/javascript" src="./javascript/valtilt.js"></script>
+  </body>
 </html>
