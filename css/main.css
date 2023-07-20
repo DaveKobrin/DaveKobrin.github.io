@@ -274,8 +274,8 @@ section {
 }
 section .row {
     display:grid;
-    gap:2rem;
-    grid-template-columns:1fr 2fr;
+    gap:3em;
+    grid-template-columns:2fr 3fr;
     grid-template-rows:1fr;
     padding:0 1.5rem;
 }
@@ -300,30 +300,30 @@ section .row span {
     width:100%;
     padding:0 1.5rem;
     margin:0 auto;
-    max-width:1140px;
+    max-width:92em;
 }
 @media (max-width: 75em) {
     .container {
-        max-width:960px;
+        max-width:72em;
         width:100%;
     }
 }
 @media (max-width: 56.25em) {
     .container {
-        max-width:720px;
+        max-width:54em;
         width:100%;
         justify-content:center;
     }
 }
 @media (max-width: 48em) {
     .container {
-        max-width:720px;
+        max-width:47em;
         width:100%
     }
 }
 @media (max-width: 37.5em) {
     .container {
-        max-width:540px;
+        max-width:37em;
         width:100%;
     }
 }
